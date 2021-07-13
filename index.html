@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Loyalty startpage</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <style media="screen">
+    body {
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      background-position: center;
+      margin: 0;
+      background: #e2e1e0;
+      padding-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 2px;
+      display: inline-block;
+      margin: 10px;
+      position: relative;
+      width: 126px;
+      padding: 5px;
+    }
+
+    .card img {
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+    }
+
+    .card-1 {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    }
+
+    .card-title {
+      font-family: Roboto, sans-serif;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      font-weight: 500;
+      text-decoration: inherit;
+      text-transform: inherit;
+      color: black;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 0.01em;
+      font-size: 17px;
+    }
+
+    .card .icon {
+      width: 95%;
+      margin-left: 2.5%;
+      height: 68px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    .wrapper {
+      flex-direction: column;
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      position: relative;
+      border-radius: 2px;
+      margin-bottom: 5px;
+    }
+
+    .wrapper > div {
+      display: flex;
+    }
+
+    .wrapper.other {
+      margin-bottom: 0;
+    }
+
+    .wrapper-row {
+      display: flex;
+    }
+
+    .wrapper-title {
+      font-size: 14px;
+      background-color: #005662;
+      color: white;
+      padding: 9px 10px;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      width: calc(100% - 18px);
+      margin: 0;
+    }
+
+    .wrapper.web-app .wrapper-title {
+      background-color: #8e0000;
+    }
+
+    .wrapper.enviorements .wrapper-title {
+      background-color: #f57f17;
+    }
+
+    .wrapper.enviorements-admin .wrapper-title {
+      background-color: #0300B3;
+    }
+
+    .wrapper.other .wrapper-title {
+      background-color: #6a1b9a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper app-shell">
+    <p class="wrapper-title">
+      App Shell
+    </p>
+    <div>
+      <a href="https://app.bitrise.io/app/33ca7e763b45e559#/builds">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/bitrise.svg);"></div>
+          <p class="card-title">Bitrise</p>
+        </div>
+      </a>
+  
+      <a href="https://github.com/jumbo-supermarkten/loyalty-extras-appshell">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/github.png);"></div>
+          <p class="card-title">App Shell</p>
+        </div>
+      </a>
+  
+      <a href="https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1482396429">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/apple.svg);"></div>
+          <p class="card-title">App Store</p>
+        </div>
+      </a>
+  
+      <a
+        href="https://play.google.com/apps/publish/?account=5269237372269288922#AppDashboardPlace:p=com.jumbo.extras&appid=4975127976488678247">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/google-play-console.svg);"></div>
+          <p class="card-title">Google Console</p>
+        </div>
+      </a>
+  
+      <a href="https://console.firebase.google.com/project/jumboloyalty/overview">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/firebase.svg);"></div>
+          <p class="card-title">Firebase</p>
+        </div>
+      </a>
+    </div>
+  </div>  
+  
+  <div class="wrapper web-app">
+    <p class="wrapper-title">
+      Frontend
+    </p>
+    <div>
+      <a href="https://github.com/jumbo-supermarkten/loyalty-extras-frontend">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/github.png);"></div>
+          <p class="card-title">Frontend</p>
+        </div>
+      </a>
+      <a href="file:///C:/Users/alend/Source/Repos/loyalty-extras-frontend/test/unit/coverage/lcov-report/index.html">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/jest.svg);"></div>
+          <p class="card-title">Unit Tests</p>
+        </div>
+      </a>
+      <a href="http://localhost:4000/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/app-icon.png);"></div>
+          <p class="card-title">Localhost</p>
+        </div>
+      </a>
+  
+      <a href="http://loyalty-app.test.cloud.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/app-icon-test.png);"></div>
+          <p class="card-title">Test</p>
+        </div>
+      </a>
+  
+      <a href="https://loyalty-app-acc.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/app-icon-acc.png);"></div>
+          <p class="card-title">Acc</p>
+        </div>
+      </a>
+  
+      <a href="https://loyalty-app.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/app-icon.png);"></div>
+          <p class="card-title">Prod</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/jumbo-supermarkten/component-library">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/github.png);"></div>
+          <p class="card-title">Cmp Library</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="wrapper enviorements-admin">
+    <p class="wrapper-title">
+      Enviorements Admin
+    </p>
+    <div>
+      <a href="https://github.com/jumbo-supermarkten/loyalty-extras-admin">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/github.png);"></div>
+          <p class="card-title">Admin</p>
+        </div>
+      </a>
+
+      <a href="http://localhost:4200/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/admin-logo.png);"></div>
+          <p class="card-title">Localhost</p>
+        </div>
+      </a>
+  
+      <a href="https://loyalty-admin.test.cloud.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/admin-logo.png);"></div>
+          <p class="card-title">Test</p>
+        </div>
+      </a>
+  
+      <a href="https://loyalty-admin.acc.cloud.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/admin-logo.png);"></div>
+          <p class="card-title">Acc</p>
+        </div>
+      </a>
+  
+      <a href="https://loyalty-admin.prod.cloud.jumbo.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/admin-logo.png);"></div>
+          <p class="card-title">Prod</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="wrapper enviorements">
+    <p class="wrapper-title">
+      Other
+    </p>
+    <div>
+      <a href="https://jumbo-supermarkten.atlassian.net/secure/RapidBoard.jspa?rapidView=201">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/jira.svg);"></div>
+          <p class="card-title">Jira</p>
+        </div>
+      </a>
+      <a
+        href="https://app.datadoghq.com/dashboard/354-c3m-sap/loyalty-promotions-screenboard?from_ts=1583511627389&live=true&to_ts=1583515227389&tv_mode=true">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/datadog.svg);"></div>
+          <p class="card-title">Datadog</p>
+        </div>
+      </a>     
+      <a href="https://www.sketch.com/s/39801665-98e3-444a-b80c-09525ccb6ccc">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/sketch.png);"></div>
+          <p class="card-title">Sketch</p>
+        </div>
+      </a>
+      <a href="https://docs.google.com/spreadsheets/d/1_xhTuc6faL0zW56JlIdDnu2RWeaKY7BJ6xzeJmjjKI0/edit#gid=512549482">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/google-sheets.svg);"></div>
+          <p class="card-title">Absence</p>
+        </div>
+      </a>
+      <a href="https://okta.jumbo.com/app/UserHome#">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/okta.svg);"></div>
+          <p class="card-title">Okta</p>
+        </div>
+      </a>
+      <a href="https://jumbo.okta-emea.com/app/UserHome">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/okta.svg);"></div>
+          <p class="card-title">Okta 2</p>
+        </div>
+      </a>
+      <a href="https://control.akamai.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/akamai.png);"></div>
+          <p class="card-title">Akamai</p>
+        </div>
+      </a>
+      <a href="https://youforce.raet.com/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/jumbo.png);"></div>
+          <p class="card-title">Youforce</p>
+        </div>
+      </a>
+      <a href="https://jumbo.topdesk.net/tas/public/ssp/">
+        <div class="card card-1">
+          <div class="icon" style="background-image: url(icons/topdesk.png);"></div>
+          <p class="card-title">TopDesk</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
